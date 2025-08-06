@@ -15,7 +15,7 @@ const slideData = [
       </>
     ),
     buttonText: "Contact us",
-    buttonLink: "contact",
+    buttonLink: "tel:+923024199048",
   },
   {
     title: "The Fastest",
