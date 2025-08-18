@@ -4,8 +4,8 @@ import Sliderimage from "../../../public/myImages/slider-bg.png";
 
 const slideData = [
   {
-    title: "The Best",
-    subtitle: "Deals For Parking lots",
+    title: "Safe Car Valet Parking",
+    subtitle: " The Best Deals For Parking lots",
     description: (
       <>
         Exceptional Service Reliable Staff Timely Delivery
@@ -18,8 +18,8 @@ const slideData = [
     buttonLink: "tel:+923024199048",
   },
   {
-    title: "The Fastest",
-    subtitle: "Way to Find Parking",
+    title: "Safe Car Valet Parking",
+    subtitle: " The Fastest Way to Find Parking",
     description: (
       <>
         Redefining Valet Parking with Excellence and Trust.
@@ -44,10 +44,14 @@ const Carosel: React.FC = () => (
             style={{ backgroundImage: `url(${Sliderimage.src})` }}
           >
             <div className="text-center max-w-3xl">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                {slide.title} <br />
+              <span className="text-4xl md:text-6xl font-bold leading-tight">
+                {slide.title}
+              </span>
+              <br />
+              <span className="text-2xl md:text-3xl font-bold leading-tight">
+                {" "}
                 {slide.subtitle}
-              </h1>
+              </span>
               <p className="mt-4 text-lg">{slide.description}</p>
               <a href={slide.buttonLink}>
                 <Button
