@@ -6,6 +6,7 @@ import Man from "../../public/myImages/man.png";
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useState } from "react";
+import Head from "next/head";
 import AVATAR_PIXEL from "../../public/myImages/Avatar pixel.png";
 import LEFT_ARROW from "../../public/myImages/left-arrow-caro.png";
 import RIGHT_ARROW from "../../public/myImages/right-arrow-caro.png";
@@ -85,6 +86,41 @@ export default function Home() {
   const { name, role, image, testimonial } = testimonials[currentSlide];
   return (
     <>
+      {/* 🔹 SEO Meta Tags */}
+      <Head>
+        <title>Safe Car Valet Parking Lahore | Premium Valet Services</title>
+        <meta
+          name="description"
+          content="Safe Car Valet Parking offers secure and professional valet services in Lahore for hotels, restaurants, and events. Affordable, reliable, and stress-free parking."
+        />
+        <meta
+          name="keywords"
+          content="valet parking Lahore, safe car valet parking, premium valet services, hotel parking Lahore, event parking Lahore, restaurant valet service, parking management Lahore"
+        />
+        <meta name="author" content="Safe Car Valet Parking" />
+
+        {/* Open Graph (for social media) */}
+        <meta property="og:title" content="Safe Car Valet Parking Lahore" />
+        <meta
+          property="og:description"
+          content="Professional valet parking services in Lahore. Hotels, restaurants & events — Safe, Secure, and Affordable."
+        />
+        <meta property="og:image" content="/myImages/valet1.png" />
+        <meta property="og:url" content="https://www.scvplahore.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Safe Car Valet Parking Lahore" />
+        <meta
+          name="twitter:description"
+          content="Professional valet parking services in Lahore. Safe, Secure & Affordable."
+        />
+        <meta name="twitter:image" content="/myImages/valet1.png" />
+
+        {/* Mobile View */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="bg-gray-100 min-h-screen">
         <header className="">
           <Navbar />
