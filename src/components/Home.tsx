@@ -88,22 +88,24 @@ export default function Home() {
     <>
       {/* 🔹 SEO Meta Tags */}
       <Head>
-        <title>Safe Car Valet Parking Lahore | Premium Valet Services</title>
+        <title>
+          Safe Car Valet Parking Lahore | Professional Valet Services
+        </title>
         <meta
           name="description"
-          content="Safe Car Valet Parking offers secure and professional valet services in Lahore for hotels, restaurants, and events. Affordable, reliable, and stress-free parking."
+          content="Looking for valet parking in Lahore? Safe Car Valet Parking provides secure, professional, and affordable valet services for hotels, restaurants, events & businesses."
         />
         <meta
           name="keywords"
-          content="valet parking Lahore, safe car valet parking, premium valet services, hotel parking Lahore, event parking Lahore, restaurant valet service, parking management Lahore"
+          content="valet parking Lahore, safe car valet parking, valet services Lahore, hotel valet parking, restaurant valet parking, event parking Lahore, parking management Lahore"
         />
         <meta name="author" content="Safe Car Valet Parking" />
 
-        {/* Open Graph (for social media) */}
+        {/* Open Graph */}
         <meta property="og:title" content="Safe Car Valet Parking Lahore" />
         <meta
           property="og:description"
-          content="Professional valet parking services in Lahore. Hotels, restaurants & events — Safe, Secure, and Affordable."
+          content="Professional valet parking services in Lahore for hotels, restaurants & events. Safe, Secure, and Affordable."
         />
         <meta property="og:image" content="/myImages/valet1.png" />
         <meta property="og:url" content="https://www.scvplahore.com" />
@@ -120,6 +122,35 @@ export default function Home() {
 
         {/* Mobile View */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* 🔹 Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Safe Car Valet Parking",
+              image: "https://scvplahore.com/myImages/valet1.png",
+              url: "https://scvplahore.com",
+              telephone: "+92-318-407-3284",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Lahore",
+                addressLocality: "Lahore",
+                addressRegion: "Punjab",
+                postalCode: "54000",
+                addressCountry: "PK",
+              },
+              priceRange: "$$",
+              openingHours: "Mo-Su 00:00-23:59",
+              sameAs: [
+                "https://www.facebook.com/yourpage",
+                "https://www.instagram.com/yourpage",
+              ],
+            }),
+          }}
+        />
       </Head>
       <div className="bg-gray-100 min-h-screen">
         <header className="">
