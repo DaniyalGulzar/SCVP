@@ -86,53 +86,66 @@ export default function Home() {
   const { name, role, image, testimonial } = testimonials[currentSlide];
   return (
     <>
-      {/* 🔹 SEO Meta Tags */}
       <Head>
+        {/* ✅ Canonical */}
+        <link rel="canonical" href="https://www.scvplahore.com/" />
+
+        {/* ✅ Title */}
         <title>
           Safe Car Valet Parking Lahore | Professional Valet Services
         </title>
+
+        {/* ✅ Meta Description (160 chars) */}
         <meta
           name="description"
-          content="Looking for valet parking in Lahore? Safe Car Valet Parking provides secure, professional, and affordable valet services for hotels, restaurants, events & businesses."
+          content="Safe Car Valet Parking Lahore provides secure and professional valet services for hotels, restaurants, weddings, and events. Trusted by businesses and guests."
         />
+
+        {/* ✅ Keywords */}
         <meta
           name="keywords"
-          content="valet parking Lahore, safe car valet parking, valet services Lahore, hotel valet parking, restaurant valet parking, event parking Lahore, parking management Lahore"
+          content="valet parking Lahore, safe car valet parking, valet services Lahore, hotel valet, restaurant valet, event valet Lahore, parking management Lahore"
         />
         <meta name="author" content="Safe Car Valet Parking" />
 
-        {/* Open Graph */}
+        {/* ✅ Open Graph */}
         <meta property="og:title" content="Safe Car Valet Parking Lahore" />
         <meta
           property="og:description"
           content="Professional valet parking services in Lahore for hotels, restaurants & events. Safe, Secure, and Affordable."
         />
-        <meta property="og:image" content="/myImages/valet1.png" />
-        <meta property="og:url" content="https://www.scvplahore.com" />
+        <meta
+          property="og:image"
+          content="https://www.scvplahore.com/myImages/valet1.png"
+        />
+        <meta property="og:url" content="https://www.scvplahore.com/" />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Card */}
+        {/* ✅ Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Safe Car Valet Parking Lahore" />
         <meta
           name="twitter:description"
-          content="Professional valet parking services in Lahore. Safe, Secure & Affordable."
+          content="SCVP Lahore - Secure, professional, and reliable valet parking services."
         />
-        <meta name="twitter:image" content="/myImages/valet1.png" />
+        <meta
+          name="twitter:image"
+          content="https://www.scvplahore.com/myImages/valet1.png"
+        />
 
-        {/* Mobile View */}
+        {/* ✅ Mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* 🔹 Local Business Schema */}
+        {/* ✅ Local Business Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Safe Car Valet Parking",
-              image: "https://scvplahore.com/myImages/valet1.png",
-              url: "https://scvplahore.com",
+              name: "Safe Car Valet Parking Lahore",
+              image: "https://www.scvplahore.com/myImages/valet1.png",
+              url: "https://www.scvplahore.com",
               telephone: "+92-318-407-3284",
               address: {
                 "@type": "PostalAddress",
@@ -152,6 +165,7 @@ export default function Home() {
           }}
         />
       </Head>
+
       <div className="bg-gray-100 min-h-screen">
         <header className="">
           <Navbar />

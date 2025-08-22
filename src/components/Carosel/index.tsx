@@ -44,9 +44,9 @@ const Carosel: React.FC = () => (
             style={{ backgroundImage: `url(${Sliderimage.src})` }}
           >
             <div className="text-center max-w-3xl">
-              <span className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 {slide.title}
-              </span>
+              </h1>
               <br />
               <span className="text-2xl md:text-3xl font-bold leading-tight">
                 {" "}
