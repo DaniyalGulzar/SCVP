@@ -209,6 +209,21 @@ export default function Home() {
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BGL2LD1VS6"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BGL2LD1VS6');
+    `,
+          }}
+        />
       </Head>
 
       <div className="bg-gray-100 min-h-screen">
