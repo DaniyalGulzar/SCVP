@@ -84,35 +84,90 @@ export default function Home() {
   };
 
   const { name, role, image, testimonial } = testimonials[currentSlide];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Safe Car Valet Parking Lahore",
+    image: "https://www.scvplahore.com/myImages/valet1.png",
+    description:
+      "Safe Car Valet Parking Lahore provides secure and professional valet services for hotels, restaurants, weddings, and events in Lahore, Pakistan.",
+    url: "https://www.scvplahore.com",
+    telephone: "+92-318-407-3284",
+    email: "info@scvplahore.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Main Boulevard",
+      addressLocality: "Lahore",
+      addressRegion: "Punjab",
+      postalCode: "54000",
+      addressCountry: "PK",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "31.5204",
+      longitude: "74.3587",
+    },
+    priceRange: "$$",
+    openingHours: "Mo-Su 00:00-23:59",
+    serviceArea: {
+      "@type": "City",
+      name: "Lahore",
+    },
+    services: [
+      "Hotel Valet Parking",
+      "Restaurant Valet Service",
+      "Event Valet Parking",
+      "Corporate Valet Services",
+    ],
+    sameAs: [
+      "https://www.facebook.com/scvplahore",
+      "https://www.instagram.com/scvplahore",
+    ],
+  };
   return (
     <>
       <Head>
-        {/* ✅ Canonical */}
-        <link rel="canonical" href="https://www.scvplahore.com/" />
-
-        {/* ✅ Title */}
+        {/* Essential Meta Tags */}
         <title>
           Safe Car Valet Parking Lahore | Professional Valet Services
         </title>
-
-        {/* ✅ Meta Description (160 chars) */}
         <meta
           name="description"
-          content="Safe Car Valet Parking Lahore provides secure and professional valet services for hotels, restaurants, weddings, and events. Trusted by businesses and guests."
+          content="Safe Car Valet Parking Lahore provides secure and professional valet services for hotels, restaurants, weddings, and events. Trusted by businesses and guests across Lahore."
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
 
-        {/* ✅ Keywords */}
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.scvplahore.com/" />
+
+        {/* Language and Charset */}
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="en-PK" />
+        <html lang="en" />
+
+        {/* Viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Keywords */}
         <meta
           name="keywords"
-          content="valet parking Lahore, safe car valet parking, valet services Lahore, hotel valet, restaurant valet, event valet Lahore, parking management Lahore"
+          content="valet parking Lahore, safe car valet parking, valet services Lahore, hotel valet, restaurant valet, event valet Lahore, parking management Lahore, professional valet, secure parking"
         />
-        <meta name="author" content="Safe Car Valet Parking" />
 
-        {/* ✅ Open Graph */}
-        <meta property="og:title" content="Safe Car Valet Parking Lahore" />
+        {/* Author and Publisher */}
+        <meta name="author" content="Safe Car Valet Parking" />
+        <meta name="publisher" content="Safe Car Valet Parking Lahore" />
+
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Safe Car Valet Parking Lahore | Professional Valet Services"
+        />
         <meta
           property="og:description"
-          content="Professional valet parking services in Lahore for hotels, restaurants & events. Safe, Secure, and Affordable."
+          content="Professional valet parking services in Lahore for hotels, restaurants & events. Safe, Secure, and Affordable valet solutions."
         />
         <meta
           property="og:image"
@@ -120,50 +175,40 @@ export default function Home() {
         />
         <meta property="og:url" content="https://www.scvplahore.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Safe Car Valet Parking Lahore" />
+        <meta property="og:locale" content="en_PK" />
 
-        {/* ✅ Twitter Card */}
+        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Safe Car Valet Parking Lahore" />
+        <meta
+          name="twitter:title"
+          content="Safe Car Valet Parking Lahore | Professional Valet Services"
+        />
         <meta
           name="twitter:description"
-          content="SCVP Lahore - Secure, professional, and reliable valet parking services."
+          content="SCVP Lahore - Secure, professional, and reliable valet parking services for hotels, restaurants, and events."
         />
         <meta
           name="twitter:image"
           content="https://www.scvplahore.com/myImages/valet1.png"
         />
 
-        {/* ✅ Mobile */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Additional SEO Meta Tags */}
+        <meta name="theme-color" content="#3B82F6" />
+        <meta name="msapplication-TileColor" content="#3B82F6" />
+        <meta name="application-name" content="Safe Car Valet Parking" />
 
-        {/* ✅ Local Business Schema */}
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Safe Car Valet Parking Lahore",
-              image: "https://www.scvplahore.com/myImages/valet1.png",
-              url: "https://www.scvplahore.com",
-              telephone: "+92-318-407-3284",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Lahore",
-                addressLocality: "Lahore",
-                addressRegion: "Punjab",
-                postalCode: "54000",
-                addressCountry: "PK",
-              },
-              priceRange: "$$",
-              openingHours: "Mo-Su 00:00-23:59",
-              sameAs: [
-                "https://www.facebook.com/yourpage",
-                "https://www.instagram.com/yourpage",
-              ],
-            }),
+            __html: JSON.stringify(structuredData),
           }}
         />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
       <div className="bg-gray-100 min-h-screen">
