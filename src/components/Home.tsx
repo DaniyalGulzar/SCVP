@@ -15,38 +15,38 @@ import Footer from "./Footer";
 const testimonials = [
   {
     name: "Ashfaq Ahmad",
-    role: "Managing Director ",
+    role: "Hotel Manager",
     image: AVATAR_PIXEL,
     testimonial:
-      "What I like about Zety resumes is their user-friendly interface and customization options. You can choose from 18 sleek templates and easily modify the design, layout, colors, and fonts to create a unique and professional-looking resume. Additionally, Zety offers pre-written content tailored to different job positions, saving users valuable time compared to crafting their resumes from scratch.",
+      "Safe Car Valet Parking provided outstanding service at our hotel. Their attendants were professional, courteous, and ensured our guests’ cars were handled with the utmost care. It truly elevated the hospitality experience for everyone.",
   },
   {
     name: "Sarah Munir",
-    role: "HR MANAGER",
+    role: "Event Planner",
     image: AVATAR_PIXEL,
     testimonial:
-      "SharpDesk made it so easy for me to build a resume that stands out. The guided process ensures that all critical aspects of a resume are covered, and the templates are top-notch. I highly recommend it to anyone looking to land a job quickly.",
+      "I hired Safe Car Valet Parking for a corporate event, and I couldn’t be more satisfied. The team managed parking for hundreds of guests smoothly. Their reliability and professionalism gave us peace of mind throughout the event.",
   },
   {
-    name: "Daniyal ",
-    role: "REGIONAL MANAGER",
+    name: "Daniyal",
+    role: "Wedding Organizer",
     image: AVATAR_PIXEL,
     testimonial:
-      "I was able to create a professional resume in no time with SharpDesk. The tips and suggestions were incredibly helpful, and the templates were exactly what I was looking for. It made my job search process much more manageable.",
+      "We booked Safe Car Valet Parking for a wedding, and the service was flawless. Guests were impressed by the quick, safe, and organized valet system. It added a premium touch to the event and ensured everything ran seamlessly.",
   },
   {
     name: "Ali Irshad",
-    role: "MARKETING SPECIALIST",
+    role: "Restaurant Owner",
     image: AVATAR_PIXEL,
     testimonial:
-      "The AI-driven resume builder from SharpDesk is a game-changer. It helped me tailor my resume to specific job applications with ease. I got multiple interview calls within a week after using it. Highly recommended!",
+      "Our restaurant partnered with Safe Car Valet Parking, and the difference was remarkable. Guests appreciated the convenience, and we noticed an improvement in overall customer satisfaction. Highly recommended for any business in Lahore.",
   },
   {
     name: "Danish",
-    role: "SOFTWARE ENGINEER",
+    role: "Corporate Executive",
     image: AVATAR_PIXEL,
     testimonial:
-      "I had been struggling to create a resume that truly represented my skills and experience. SharpDesk made it so simple and efficient. The end result was a polished, professional resume that I'm proud to share.",
+      "Safe Car Valet Parking has become our go-to choice for corporate gatherings. Their staff is punctual, disciplined, and always dressed professionally. They make a lasting impression on our clients and employees every time.",
   },
 ];
 
@@ -243,25 +243,51 @@ export default function Home() {
                 At Safe Car Valet Parking, we understand that your time,
                 comfort, and vehicle safety are top priorities. That’s why we
                 offer seamless, secure, and professional valet services you can
-                depend on.
+                depend on for any occasion.
               </p>
+
               <p className="my-4 text-sm md:text-xl text-black-600">
                 Whether you’re arriving at a corporate event, luxury hotel,
-                private gathering, or a high-traffic location, our trained staff
-                ensures a smooth and courteous handover every time.
+                private gathering, wedding, or a high-traffic shopping
+                destination, our trained staff ensures a smooth and courteous
+                handover every time. We focus on leaving a positive first
+                impression that reflects your standards of hospitality.
               </p>
+
               <p className="my-4 text-sm md:text-xl text-black-600">
-                With 24/7 support, real-time tracking options, and a
-                customer-first approach, Safe Car Valet brings you convenience
-                with peace of mind.
+                With 24/7 customer support, real-time vehicle tracking options,
+                and a customer-first approach, Safe Car Valet brings you
+                convenience with complete peace of mind. Our team is committed
+                to providing not just parking, but a worry-free experience from
+                start to finish.
               </p>
+
               <p className="my-4 text-sm md:text-xl text-black-600">
-                From private venues to large-scale commercial setups, our team
-                is ready to serve you with professionalism, punctuality, and a
-                smile.
+                From private venues and residential communities to large-scale
+                corporate functions, commercial complexes, and entertainment
+                events, our team is equipped with the expertise and resources to
+                manage parking operations efficiently and professionally.
               </p>
+
               <p className="my-4 text-sm md:text-xl text-black-600">
-                Your car is in safe hands – that’s our promise.
+                Every member of our staff is trained to handle vehicles of all
+                makes and models with care and precision. We follow strict
+                safety protocols and maintain comprehensive insurance coverage
+                so that every client feels confident their vehicle is in safe
+                hands.
+              </p>
+
+              <p className="my-4 text-sm md:text-xl text-black-600">
+                Choosing Safe Car Valet Parking means choosing reliability,
+                punctuality, and trust. Our goal is to go beyond simple valet
+                services — we aim to enhance your guests’ overall experience and
+                contribute to the success of your event or business.
+              </p>
+
+              <p className="my-4 text-sm md:text-xl text-black-600">
+                Your car is in safe hands – that’s our promise, and it’s what
+                sets us apart as Lahore’s leading valet parking service
+                provider.
               </p>
 
               <Link href="/about">

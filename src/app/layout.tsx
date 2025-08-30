@@ -11,8 +11,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.scvplahore.com"),
   title: {
-    default:
-      "Safe Car Valet Parking Lahore | Professional Valet Services | Premium Car Parking Solutions",
+    default: "Safe Car Valet Parking Lahore | Professional Valet Services ",
     template: "%s | Safe Car Valet Parking Lahore",
   },
   description:

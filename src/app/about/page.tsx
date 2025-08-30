@@ -96,46 +96,58 @@ export default function AboutUs() {
 
           <div className="text-justify leading-relaxed space-y-6 text-[17px]">
             <p>
-              Safe Car Valet Parking is more than just a service — we are a
-              dedicated team of professionals committed to providing top-tier
-              valet parking solutions that prioritize safety, efficiency, and
-              customer satisfaction. Our company was founded on the principles
-              of trust, respect, and excellence.
+              Safe Car Valet Parking Lahore is more than just a service — it is
+              a complete hospitality experience designed to provide safety,
+              convenience, and professionalism at every level. We specialize in
+              valet parking for hotels, restaurants, weddings, private parties,
+              exhibitions, corporate offices, and special events across Lahore.
             </p>
             <p>
-              Our staff is made up of highly motivated, educated young
-              professionals, including college graduates and industry trainees.
-              Through rigorous training and hands-on experience, our team
-              continually hones their skills to meet the ever-evolving demands
-              of the hospitality and parking industry.
+              Our company was founded on the principles of trust, respect, and
+              excellence. Over the years, we have built a reputation for
+              reliability and outstanding customer service. Every guest we serve
+              is welcomed with professionalism, courtesy, and care, ensuring
+              their first impression of your venue is nothing short of
+              exceptional.
             </p>
             <p>
-              At Safe Car Valet Parking, we understand that a valet experience
-              is often the first impression a client or guest has of your
-              establishment. That’s why we place immense importance on
-              professionalism and courtesy in every interaction.
+              Our team is made up of highly motivated, educated young
+              professionals, including graduates and industry trainees. Each
+              valet attendant undergoes intensive training in guest interaction,
+              vehicle handling, and safety management. Through hands-on
+              experience, our staff continually adapts to the evolving needs of
+              the hospitality and parking industry.
             </p>
             <p>
-              Safety is a cornerstone of our service. We follow strict protocols
-              and best practices to ensure that every vehicle entrusted to us is
-              handled with the utmost care and security.
+              Safety is the cornerstone of our service. We follow strict
+              protocols and best practices to ensure that every vehicle
+              entrusted to us is handled with the utmost care. With real-time
+              vehicle tracking, comprehensive insurance coverage, and 24/7
+              support, we provide complete peace of mind to our clients and
+              their guests.
             </p>
             <p>
-              Our management team brings years of experience and leadership,
-              guiding our employees to continually improve and innovate our
-              services. We are committed to personal and professional growth,
-              providing ongoing training and opportunities for advancement.
+              Our management team brings years of leadership and industry
+              experience. They are committed to innovation, introducing modern
+              systems and eco-friendly practices to make valet operations
+              smoother and more efficient. We believe in personal and
+              professional growth, offering continuous training and advancement
+              opportunities to our employees.
             </p>
             <p>
-              Integrity and transparency are values we hold dear. Whether you
-              operate a hotel, restaurant, event venue, or corporate office, we
-              tailor our valet services to suit your unique requirements.
+              Integrity and transparency are values we live by. Whether you
+              operate a hotel, restaurant, corporate office, or event venue, we
+              tailor our valet services to match your unique requirements. No
+              matter the scale — from small private gatherings to high-profile
+              corporate events — we deliver the same standard of excellence.
             </p>
             <p>
-              Choosing Safe Car Valet Parking means choosing peace of mind and
-              excellence. We aim to create lasting positive impressions — not
-              just through exceptional service but also by being a dependable
-              extension of your team.
+              Choosing Safe Car Valet Parking means choosing a dependable
+              partner. We aim to create lasting positive impressions, not only
+              through seamless parking management but also by being a trusted
+              extension of your team. Our mission is to be Lahore’s most
+              reliable valet parking service provider, setting new standards in
+              safety, service, and customer satisfaction.
             </p>
           </div>
         </div>
