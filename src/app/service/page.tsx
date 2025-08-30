@@ -7,6 +7,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Carosel from "@/components/Carosel";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const services = [
   {
@@ -85,65 +86,84 @@ const services = [
 
 const ServiceSection = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header>
-        <Navbar />
-      </header>
+    <>
+      <Head>
+        {/* <title>About Us | Safe Car Valet Parking</title> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BGL2LD1VS6"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BGL2LD1VS6');
+    `,
+          }}
+        />
+      </Head>
+      <div className="bg-gray-100 min-h-screen">
+        <header>
+          <Navbar />
+        </header>
 
-      <Carosel />
+        <Carosel />
 
-      <main className="max-w-7xl mx-auto px-6 py-16">
-        <section className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-900">Services</h2>
-          <p className="text-xl mt-4 text-gray-700">Our Valet Services</p>
-          <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
-            We deliver excellent valet services for every client need with
-            guaranteed satisfaction.
-          </p>
-        </section>
+        <main className="max-w-7xl mx-auto px-6 py-16">
+          <section className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-900">Services</h2>
+            <p className="text-xl mt-4 text-gray-700">Our Valet Services</p>
+            <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
+              We deliver excellent valet services for every client need with
+              guaranteed satisfaction.
+            </p>
+          </section>
 
-        <section className="space-y-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-start gap-6 border border-gray-200 p-6 rounded-lg shadow-sm bg-white hover:shadow-md transition duration-300"
-            >
-              <div className="w-28 h-28 flex-shrink-0 border-2 border-dashed flex justify-center items-center rounded-md bg-gray-50">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={80}
-                  height={80}
-                  className="object-contain"
-                />
+          <section className="space-y-6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-start gap-6 border border-gray-200 p-6 rounded-lg shadow-sm bg-white hover:shadow-md transition duration-300"
+              >
+                <div className="w-28 h-28 flex-shrink-0 border-2 border-dashed flex justify-center items-center rounded-md bg-gray-50">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={80}
+                    height={80}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            </div>
-          ))}
-        </section>
-      </main>
+            ))}
+          </section>
+        </main>
 
-      {/* Scroll to top button */}
-      <div className="fixed right-6 bottom-6 z-50">
-        <div className="flex justify-center items-center rounded-full w-[70px] h-[70px] shadow-md hover:shadow-lg transition">
-          <Image
-            src="https://drive.google.com/uc?export=view&id=1_acUtitgK5-P0EFU5RYf_BfYX__zEwjB"
-            alt="Scroll to Top"
-            width={60}
-            height={60}
-            className="cursor-pointer hover:opacity-60 transition-opacity duration-300"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          />
+        {/* Scroll to top button */}
+        <div className="fixed right-6 bottom-6 z-50">
+          <div className="flex justify-center items-center rounded-full w-[70px] h-[70px] shadow-md hover:shadow-lg transition">
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1_acUtitgK5-P0EFU5RYf_BfYX__zEwjB"
+              alt="Scroll to Top"
+              width={60}
+              height={60}
+              className="cursor-pointer hover:opacity-60 transition-opacity duration-300"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            />
+          </div>
         </div>
-      </div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
