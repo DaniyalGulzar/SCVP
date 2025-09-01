@@ -12,15 +12,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.scvplahore.com"),
   title: {
     default: "Safe Car Valet Parking Lahore | Professional Valet Services ",
-    template: "%s | Safe Car Valet Parking Lahore",
+    template: "%s | Safe Car Valet Parking ",
   },
   description:
     "Safe Car Valet Parking Lahore offers professional valet services for hotels, restaurants, weddings, corporate events, and private gatherings. With trained attendants, 24/7 support, real-time tracking, insurance coverage, and competitive pricing, we ensure secure and reliable parking.",
   keywords:
     "valet parking Lahore, safe car valet parking, professional valet services Lahore, hotel valet parking, restaurant valet services, wedding valet parking, event valet Lahore, corporate valet services, luxury valet parking, secure car parking, parking management Lahore, professional valet attendants, car parking solutions, premium valet services, 24/7 valet parking, insured valet parking, certified valet staff, commercial valet services, private event parking, shopping mall valet, hospital valet parking, Pakistan valet services, Lahore parking solutions, guest parking services, valet parking company, car care valet services, executive parking services, VIP parking solutions, doorman valet services, concierge parking Lahore",
-  authors: [{ name: "Safe Car Valet Parking Lahore" }],
+  authors: [{ name: "Safe Car Valet Parking " }],
   creator: "Safe Car Valet Parking Team",
-  publisher: "Safe Car Valet Parking Lahore",
+  publisher: "Safe Car Valet Parking ",
   category: "Business Services",
   classification: "Valet Parking Services",
   robots: {
