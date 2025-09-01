@@ -129,9 +129,7 @@ export default function Home() {
     <>
       <Head>
         {/* Essential Meta Tags */}
-        <title>
-          Safe Car Valet Parking Lahore | Professional Valet Services
-        </title>
+        <title>Safe Car Valet Parking | Professional Valet Services</title>
         <meta
           name="description"
           content="Safe Car Valet Parking Lahore provides secure and professional valet services for hotels, restaurants, weddings, and events. Trusted by businesses and guests across Lahore."
@@ -242,7 +240,7 @@ export default function Home() {
                 src="/myImages/testimage.png"
                 alt="Background"
                 width={600}
-                height={370}
+                height={470}
                 className="w-full h-full md:w-[700px] md:h-[470px] rounded-md"
               />
             </div>
@@ -254,14 +252,14 @@ export default function Home() {
                 </span>
               </span>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2 text-sm md:text-lg text-justify text-black-600">
                 At Safe Car Valet Parking, we understand that your time,
                 comfort, and vehicle safety are top priorities. That’s why we
                 offer seamless, secure, and professional valet services you can
                 depend on for any occasion.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2 text-sm md:text-lg text-justify text-black-600">
                 Whether you’re arriving at a corporate event, luxury hotel,
                 private gathering, wedding, or a high-traffic shopping
                 destination, our trained staff ensures a smooth and courteous
@@ -269,7 +267,7 @@ export default function Home() {
                 impression that reflects your standards of hospitality.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2 text-sm md:text-lg text-justify text-black-600">
                 With 24/7 customer support, real-time vehicle tracking options,
                 and a customer-first approach, Safe Car Valet brings you
                 convenience with complete peace of mind. Our team is committed
@@ -277,14 +275,14 @@ export default function Home() {
                 start to finish.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2 text-sm md:text-lg text-justify text-black-600">
                 From private venues and residential communities to large-scale
                 corporate functions, commercial complexes, and entertainment
                 events, our team is equipped with the expertise and resources to
                 manage parking operations efficiently and professionally.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2 text-sm md:text-lg text-justify text-black-600">
                 Every member of our staff is trained to handle vehicles of all
                 makes and models with care and precision. We follow strict
                 safety protocols and maintain comprehensive insurance coverage
@@ -292,18 +290,18 @@ export default function Home() {
                 hands.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              <p className="my-2text-sm md:text-lg text-justify text-black-600">
                 Choosing Safe Car Valet Parking means choosing reliability,
                 punctuality, and trust. Our goal is to go beyond simple valet
                 services — we aim to enhance your guests’ overall experience and
                 contribute to the success of your event or business.
               </p>
 
-              <p className="my-4 text-sm md:text-xl text-black-600">
+              {/* <p className="my-4 text-sm md:text-xl text-black-600">
                 Your car is in safe hands – that’s our promise, and it’s what
                 sets us apart as Lahore’s leading valet parking service
                 provider.
-              </p>
+              </p> */}
 
               <Link href="/about">
                 <button className="mt-4 px-6 py-2 text-black-600 bg-blue-500 font-semibold border border-blue-500 hover:text-black-400 hover:bg-blue-100 transition duration-300 cursor-pointer">

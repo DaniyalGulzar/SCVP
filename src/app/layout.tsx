@@ -36,17 +36,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Safe Car Valet Parking Lahore | Professional Valet Services | Premium Car Parking Solutions",
+      "Safe Car Valet Parking  | Professional Valet Services | Premium Car Parking Solutions",
     description:
       "Professional valet parking services in Lahore for hotels, restaurants, weddings & corporate events. Safe, secure, and reliable valet solutions with 24/7 support, trained staff, and comprehensive insurance coverage. Trust Pakistan's leading valet parking company.",
     url: "https://www.scvplahore.com",
-    siteName: "Safe Car Valet Parking Lahore",
+    siteName: "Safe Car Valet Parking ",
     images: [
       {
         url: "https://www.scvplahore.com/myImages/valet1.png",
         width: 1200,
         height: 630,
-        alt: "Safe Car Valet Parking Lahore - Professional Valet Services",
+        alt: "Safe Car Valet Parking  - Professional Valet Services",
       },
       {
         url: "https://www.scvplahore.com/myImages/valet-service.jpg",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Safe Car Valet Parking Lahore | Professional Valet Services",
+    title: "Safe Car Valet Parking  | Professional Valet Services",
     description:
       "SCVP Lahore - Premium, secure, and professional valet parking services for hotels, restaurants, weddings, and corporate events. 24/7 support with trained certified staff.",
     images: ["https://www.scvplahore.com/myImages/valet1.png"],
@@ -187,7 +187,7 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://www.scvplahore.com/#organization",
-                  name: "Safe Car Valet Parking Lahore",
+                  name: "Safe Car Valet Parking ",
                   url: "https://www.scvplahore.com",
                   sameAs: [
                     "https://www.facebook.com/scvplahore", // Add your social media
